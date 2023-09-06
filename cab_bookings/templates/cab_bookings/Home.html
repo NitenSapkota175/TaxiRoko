@@ -1,0 +1,248 @@
+{%extends 'Main.html' %}
+{%load static%}
+{%block  content%}
+    <!-- booking form -->
+
+    <div class="container-fluid mx-8 booking-background-color">
+        <div class="container">
+            {% include 'cab_bookings/messages.html' %}
+            <div class="row">
+                <!-- column full -->
+                <div class="book-now-heading mt-4">
+                    <h2><span class="line">Book</span> a <span class="line">Cab</span> Now</h2>
+                    <h6><span class="line">Efficient </span>, <span class="line">Reliable </span> and <span
+                            class="line"> Convenient</span></h6>
+                </div>
+                <div class="col-12">
+                    <form class="booking-form-head" method="POST">
+                        {% csrf_token %}
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputname">Full Name</label>
+                                <input type="name" class="form-control" id="inputname" placeholder="Full Name"
+                                    name="name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputemail">Email ID</label>
+                                <input type="email" class="form-control" id="inputemail" placeholder="email"
+                                    name="email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputAddres">Pick Up</label>
+                                <input type="location" class="form-control" id="inputAddress" placeholder="Pick up"
+                                    name="pickup">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress2">Drop Off</label>
+                                <input type="location" class="form-control" id="inputAddress2" placeholder="Drop Off"
+                                    name="dropoff">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputnumber">Phone Number</label>
+                                <input type="number" class="form-control" id="inputnumber" name="phonenumber"
+                                    placeholder="phonenumber">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputdate">Date</label>
+                                <input type="date" class="form-control" id="inputdate" name="date">
+                            </div>
+                        </div>
+                        <div class="btn-booking">
+                            <button type="submit" class="btn">Book Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- booking form ends here -->
+
+        <!-- graphics for branding -->
+        <section class="graphic">
+            <img src="{%static 'images/graphic.png' %}" alt="">
+        </section>
+        <!-- graphics ends here -->
+
+    <!-- cards section here -->
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h4 class="section-title h3">Top 3 Places to <span class="line">visit</span> in <span class="line">2023</span></h4>
+            <div class="row">
+                <!-- Darjeeling -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img class=" img-fluid" src="{%static 'images/darjeeling.png' %}" alt="card image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Darjeeling</h4>
+                                        <p class="card-text">
+                                            Darjeeling, a Himalayan gem, entices travelers with its stunning tea-covered
+                                            slopes, awe-inspiring Himalayan vistas, and a blend of colonial and local
+                                            charm, making it an enchanting destination for those seeking serene beauty
+                                            and cultural exploration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- darjeeling -->
+                <!-- sikkim -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img class=" img-fluid" src="{% static 'images/sikkim.png' %}" alt="card image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Sikkim</h4>
+                                        <p class="card-text">Sikkim, a paradise in the mountains, offers travelers a
+                                            captivating blend of lush landscapes, diverse flora and fauna, rich Buddhist
+                                            heritage, and warm local hospitality, making it an ideal destination for a
+                                            soul-enriching and immersive travel experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sikkim -->
+                <!-- Kalimpong -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <img class=" img-fluid" src="{% static 'images/kalimpong.png' %}" alt="card image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Kalimpong</h4>
+                                        <p class="card-text">Nestled in the Himalayan embrace, Kalimpong beckons
+                                            travelers with its tranquil ambiance, panoramic mountain views, and a
+                                            tapestry of cultures that come alive through monasteries, flower nurseries,
+                                            and local markets, offering a serene and culturally enriching escape.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- kalimpong -->
+            </div>
+        </div>
+    </section>
+    <!-- cards section ends here -->
+
+    <!-- Why us section -->
+    <div class="container-fluid why-us-container">
+        <div class="container why-us">
+            <h2>Why <span class="line">Choose</span> Us</h2>
+            <!-- this the container of why us secgtion -->
+            <div class="row why-us-row">
+                <!--  row where 3 columns -->
+                <div class="col-md-4">
+                    <!-- 1st col -->
+                    <i class="fa-solid fa-taxi line"></i>
+                    <h6>On Time Services</h6>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- 2nd col -->
+                    <i class="fa-solid fa-person-circle-check line"></i>
+                    <h6>Local Expertise</h6>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- 3rd col -->
+                    <i class="fa-solid fa-person-shelter line"></i>
+                    <h6>Woman & Senior Citizen Safety</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why us section ends here -->
+
+    <!-- FAQ section -->
+    <div class="wrapper bg-white rounded shadow">
+        <div class="h3 text-black text-center">How can we <span class="line">help</span> you?</div>
+        <div class="accordion accordion-flush border-top border-start border-end" id="myAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                        aria-expanded="false" aria-controls="flush-collapseOne"> How Can I Book / Hire A Car From
+                        TAXIROKO? </button> </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse border-0"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                    <div class="accordion-body p-0">
+                        <ul class="list-unstyled m-0">
+                            <li><a href="#">Booking a car for hiring is very easy in <span
+                                        class="line">TAXIROKO</span>.You can book a car on rent either online by the
+                                    search box provided at the home page or you can call us at our 24 X 7 customer care
+                                    number +91-.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false" aria-controls="flush-collapseTwo">Can I Have The Confirmation Of The
+                        Vehicle I Want?</button> </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse border-0"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                    <div class="accordion-body p-0">
+                        <ul class="list-unstyled m-0">
+                            <li><a href="#">Yes. A mail will be sent to your mail id you have provided containing the
+                                    details of vehicle including color, vehicle number and category.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne"> <button class="accordion-button collapsed border-0"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                        aria-expanded="false" aria-controls="flush-collapseThree"> If I Cancel My Reservation, Do I
+                        Still Have To Pay? </button> </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse border-0"
+                    aria-labelledby="flush-headingOne" data-bs-parent="#myAccordion">
+                    <div class="accordion-body p-0">
+                        <ul class="list-unstyled m-0">
+                            <li><a href="#">There are no charges if you cancel more than 24 hours before booking start
+                                    time. (Transnational charges will be applicable on customer.)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ section ends here -->
+
+
+    <!--Script Link  put befor end of body -->
+
+
+
+{%endblock content%}
