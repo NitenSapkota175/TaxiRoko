@@ -90,9 +90,9 @@ else:
       DATABASES = {
         'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'taxiroko_cab_booking',
-        'USER': 'nitensapkota175_cb',
-        'PASSWORD': 'niten',
+        'NAME': 'tr_cab_booking',
+        'USER': 'taxiroko',
+        'PASSWORD': 'taxiroko@2023',
         'HOST':  'localhost',
         'PORT': ''
     }
