@@ -657,3 +657,25 @@ h6 {
         border-radius: 0%;
     }    
 }
+
+/*  making all plcaeholder uppercase */
+
+::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+ }
+ 
+ :-moz-placeholder { 
+    text-transform: uppercase;
+    font-size: 0.8rem;
+ }
+ 
+ ::-moz-placeholder {  
+    text-transform: uppercase;
+    font-size: 0.8rem;
+ }
+ 
+ :-ms-input-placeholder { 
+    text-transform: uppercase;
+    font-size: 0.8rem;
+ }

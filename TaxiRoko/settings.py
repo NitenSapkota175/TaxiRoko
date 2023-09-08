@@ -158,9 +158,9 @@ JAZZMIN_SETTINGS = {
     "site_title": "TaxiRoko",
     "site_header": "TaxiRoko",
     "site_brand": "TaxiRoko",
-    "site_icon": "/images/latest-logo2.png",
+    "site_icon": "/images/logo.png",
     # Add your own branding here
-    "site_logo": "/images/latest-logo2.png",
+    # "site_logo": "/images/logo.png",
     "welcome_sign": "TaxiRoko",
     # Copyright on the footer
     "copyright": "TaxiRoko",
