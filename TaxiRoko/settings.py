@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-49+(*52yjhb9u56(*a7jt8)fde#2748x69@qjv5yk@t#lv=2v(
 DEBUG =  False
 
 if DEBUG == False:
-    ALLOWED_HOSTS = ['64.227.184.200']
+    ALLOWED_HOSTS = ['taxiroko.com','www.taxiroko.com','64.227.184.200']
 else:
     ALLOWED_HOSTS = []
 
