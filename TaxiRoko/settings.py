@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-49+(*52yjhb9u56(*a7jt8)fde#2748x69@qjv5yk@t#lv=2v(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG =  False
+DEBUG =  True
 
 if DEBUG == False:
     ALLOWED_HOSTS = ['www.taxiroko.com','taxiroko.com','64.227.184.200']
@@ -158,9 +158,9 @@ JAZZMIN_SETTINGS = {
     "site_title": "TaxiRoko",
     "site_header": "TaxiRoko",
     "site_brand": "TaxiRoko",
-   #"site_icon": "/images/logo.png",
+   "site_icon": "/images/logo.png",
     # Add your own branding here
-    # "site_logo": "/images/logo.png",
+    "site_logo": "/images/admin-logo.png",
     "welcome_sign": "TaxiRoko",
     # Copyright on the footer
     "copyright": "TaxiRoko",
