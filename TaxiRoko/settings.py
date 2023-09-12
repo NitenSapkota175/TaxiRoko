@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-49+(*52yjhb9u56(*a7jt8)fde#2748x69@qjv5yk@t#lv=2v(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG =  False
+DEBUG =  True
 
 if DEBUG == False:
     ALLOWED_HOSTS = ['www.taxiroko.com','taxiroko.com','64.227.184.200']
